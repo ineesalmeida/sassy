@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Amatic SC';
+  font-size: 1.5rem;
+}
+
+$color-primary: #69A2B0;
+$color-secondary: #DE8F6E; 
+$color-terceary: #3B3561; 
+
+$color-text-light: white; 
+$color-text-dark: #333; 
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+} 
+
+@mixin style-link-text($col) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $col;
+}
+
+
+nav {
+  margin: 30px;
+  background-color: lighten($color-primary, 20%);
+  padding: 20px;
+  
+  @include clearfix;
+}
+
+.navigation {
+  list-style: none;
+  float: left;
+  
+  li {
+    display: inline-block;
+    margin-left: 20px;
+    
+    &:first-child {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    
+    a:link {
+      @include style-link-text($color-text-dark);
+      transition: color 0.2s ease-out;
+    }
+    a:hover {
+      @include style-link-text($color-text-light);
+    }
+  }
+}
+
+$btn-width: 150px;
+
+.buttons {
+  float: right;
+  
+  .btn-main,
+  .btn-hot {
+    
+    &:link {
+      text-align: center;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 100px;
+      width: $btn-width;
+      background-color: $color-secondary;
+      
+      @include style-link-text($color-text-light);
+    }
+    &:hover {
+      background-color: darken($color-secondary, 5%);
+      transition: background-color 0.2s ease-out;
+    }
+  }
+}

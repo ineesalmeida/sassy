@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 150%; }
+
+p, h1, h2, h3, h4, h5, a {
+  font-family: 'Amatic SC'; }
+
+nav {
+  margin: 30px;
+  background-color: #accbd3;
+  padding: 20px; }
+  nav::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.navigation {
+  list-style: none;
+  float: left; }
+  .navigation li {
+    display: inline-block;
+    margin-left: 20px; }
+    .navigation li:first-child {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px; }
+    .navigation li a:link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #333;
+      transition: color 0.2s ease-out; }
+    .navigation li a:hover {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white; }
+
+.buttons {
+  float: right; }
+  .buttons .btn-main:link,
+  .buttons .btn-hot:link {
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    width: 150px;
+    background-color: #DE8F6E;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white; }
+  .buttons .btn-main:hover,
+  .buttons .btn-hot:hover {
+    background-color: #d97f59;
+    transition: background-color 0.2s ease-out; }

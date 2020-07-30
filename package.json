@@ -1,0 +1,25 @@
+{
+  "name": "sassy",
+  "version": "1.0.0",
+  "description": "a new test package",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass static/sass/main.scss static/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ineesalmeida/sassy.git"
+  },
+  "author": "Inês",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ineesalmeida/sassy/issues"
+  },
+  "homepage": "https://github.com/ineesalmeida/sassy#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
