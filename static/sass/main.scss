@@ -1,21 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Amatic SC';
-  font-size: 1.5rem;
-}
-
 $color-primary: #69A2B0;
 $color-secondary: #DE8F6E; 
 $color-terceary: #3B3561; 
 
 $color-text-light: white; 
 $color-text-dark: #333; 
+
+$btn-width: 150px;
 
 @mixin clearfix {
   &::after {
@@ -31,6 +23,15 @@ $color-text-dark: #333;
   color: $col;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Amatic SC';
+    font-size: 1.5rem;
+}
 
 nav {
   margin: 30px;
@@ -40,7 +41,7 @@ nav {
   @include clearfix;
 }
 
-.navigation {
+.m-navigation {
   list-style: none;
   float: left;
   
@@ -64,13 +65,11 @@ nav {
   }
 }
 
-$btn-width: 150px;
-
-.buttons {
+.m-buttons {
   float: right;
   
-  .btn-main,
-  .btn-hot {
+  &.-main,
+  &.-hot {
     
     &:link {
       text-align: center;

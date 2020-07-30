@@ -3,11 +3,9 @@
   margin: 0;
   padding: 0; }
 
-html {
-  font-size: 150%; }
-
-p, h1, h2, h3, h4, h5, a {
-  font-family: 'Amatic SC'; }
+body {
+  font-family: 'Amatic SC';
+  font-size: 1.5rem; }
 
 nav {
   margin: 30px;
@@ -18,30 +16,29 @@ nav {
     clear: both;
     display: table; }
 
-.navigation {
+.m-navigation {
   list-style: none;
   float: left; }
-  .navigation li {
+  .m-navigation li {
     display: inline-block;
     margin-left: 20px; }
-    .navigation li:first-child {
+    .m-navigation li:first-child {
       margin-top: 10px;
       margin-bottom: 10px;
       margin-left: 10px; }
-    .navigation li a:link {
+    .m-navigation li a:link {
       text-decoration: none;
       text-transform: uppercase;
       color: #333;
       transition: color 0.2s ease-out; }
-    .navigation li a:hover {
+    .m-navigation li a:hover {
       text-decoration: none;
       text-transform: uppercase;
       color: white; }
 
-.buttons {
+.m-buttons {
   float: right; }
-  .buttons .btn-main:link,
-  .buttons .btn-hot:link {
+  .m-buttons.-main:link, .m-buttons.-hot:link {
     text-align: center;
     padding: 10px;
     display: inline-block;
@@ -51,7 +48,6 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     color: white; }
-  .buttons .btn-main:hover,
-  .buttons .btn-hot:hover {
+  .m-buttons.-main:hover, .m-buttons.-hot:hover {
     background-color: #d97f59;
     transition: background-color 0.2s ease-out; }
